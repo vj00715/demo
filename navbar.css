@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    /* border: 0.01px solid red; */
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+}
+/* navbar css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+.brand {
+    display: flex;
+    align-items: center;
+}
+.navbar .logo_img {
+    margin-top: 10px;
+    margin-left: .5rem;
+    margin-right: 0;
+}
+.navbar .brand_name {
+    font-size: 1.7rem;
+    margin: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+.navbar_links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar_links li {
+    list-style: none;
+}
+.navbar_links li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem;
+    display: block;
+}
+.navbar_links li a:hover {
+    background-color: white;
+    color: #333;
+}
+/* toggle button */
+.toggle_btn {
+    position: absolute;
+    top: 0.85rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1.6rem;
+    width: 1.6rem;
+}
+.toggle_btn .bar {
+    height: 0.15rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 1px;
+}
+.navbar_links li a.active{
+    background-color: #555;
+    color: white;
+}
+/* For 600px viewport start */
+@media (max-width: 800px){
+    .toggle_btn {
+        display: flex;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar_links {
+        display: none;
+        width: 100%;
+    }
+    .navbar_links ul {
+        width: 100%;
+        flex-direction: column;
+        /* border-top: 1px solid white; */
+        border-bottom: 1px solid #333;
+    }
+    .navbar_links li {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar_links li a{
+        padding: .5rem;
+        
+    }
+    .navbar_links.active {
+        display: flex;
+    }
+}
+
+

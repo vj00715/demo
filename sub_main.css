@@ -1,0 +1,127 @@
+/* this css is in use with all pages */
+/* *{
+    border: 1px solid black;
+} */
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* iframe links css is in iframe.css because it separate page an using i frame to view it in  */
+
+.content {
+    width: 70%;
+    padding: 0;
+    padding-left: .5rem;
+    margin: 0;
+    color: #333;
+}
+
+.content .heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 0;
+    border-bottom: 1px solid #333;
+}
+
+.toggle_btn_2 {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 40px;
+    padding: .2rem .2rem;
+    margin: 0;
+    background-color: transparent;
+    display: none;
+    position: relative;
+    left: 0;
+    top: 18px;
+}
+
+.toggle_btn_2 .bar {
+    width: 100%;
+    height: 5px;
+    background-color: #333;
+}
+
+/* sidebar css */
+.sideBar {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+    background-color: #333;
+    border-top: white solid 1px;
+}
+.sideBar .topic {
+    width: 100%;
+    font-size: 2rem;
+    color: #333;
+    background-color: white;
+    text-align: center;
+}
+
+.sideBar a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #333;
+    color: white;
+    padding: 6px 20px 6px 20px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+/* On hover a */
+.sideBar a:hover {
+    border-top: 0.5px solid #333;
+    border-bottom: 0.5px solid #333;
+    background-color: white;
+    color: #333;
+}
+
+/* on active a */
+/* .sideBar a.active {
+    background-color: white;
+    color: #333;
+    border-top: 0.5px solid #333;
+    border-right: 0.5px solid #333;
+} */
+
+.sideBar a::after {
+    content: " .";
+}
+
+@media (max-width: 1000px) {
+    .toggle_btn_2 {
+        display: flex;
+    }
+
+    /* for some reason class name is not working here  */
+    .sideBar {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* for some reason class name is not working here  */
+    .sideBar.active {
+        display: flex;
+    }
+
+    .content .heading {
+        margin: 0;
+        padding: 0;
+        padding-left: 3.5rem;
+        text-align: left;
+    }
+    .content .contentData{
+        padding: 0.5rem;
+    }
+}
