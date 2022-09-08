@@ -31,6 +31,7 @@
 .sideBar {
     display: flex;
     min-width: 200px;
+    min-height: 800px;
     flex-direction: column;
     background-color: #333;
 }
