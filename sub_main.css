@@ -13,6 +13,7 @@
     flex-direction: column;
     padding: .2rem .2rem;
     margin: 0;
+    cursor: pointer;
 }
 
 .subnav .toggle_btn_2 .bar {
@@ -31,7 +32,8 @@
 .sideBar {
     display: flex;
     min-width: 200px;
-    min-height: 800px;
+    /* min-height: 800px; */
+    min-height: calc(100vh - 56.8px);
     flex-direction: column;
     background-color: #333;
 }
@@ -65,7 +67,7 @@
     color: red;
 }
 
-/* .sideBar a.active {
+/* .sideBar .if_link.active {
     background-color: white;
     color: #333;
     border-top: 0.5px solid #333;
