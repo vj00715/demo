@@ -92,9 +92,10 @@
 .content .contentData {
     padding: 2rem;
     color: navy;
-    line-height: 2rem;
+    line-height: 2.3rem;
     font-size: 1.3rem;
     text-transform: capitalize;
+    list-style-image: url('/img/listarrow.png');
 }
 
 /* this css class are made to add css for contentData */
@@ -110,6 +111,13 @@
 
 .highLight {
     color: orange;
+}
+.highLight2 {
+    color: lightblue;
+}
+
+.lowerCase{
+    text-transform: lowercase;
 }
 
 @media (max-width: 1000px) {
