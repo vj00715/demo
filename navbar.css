@@ -116,6 +116,9 @@ body {
         border-bottom: 1px solid #333;
     }
 
+    .navbar .brand .logo_img{
+        margin-left: 0;
+    }
     .navbar_links li {
         flex-direction: column;
         text-align: center;
